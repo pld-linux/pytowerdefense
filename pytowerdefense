@@ -1,0 +1,7 @@
+#!/bin/sh
+
+dir=$(pwd)
+cd /usr/share/pytowerdefense
+python main.py
+cd $dir
+
