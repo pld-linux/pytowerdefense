@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=pytowerdefense
+Comment=Tower Defense Game
+Exec=pytowerdefense
+Terminal=false
+Type=Application
+Categories=Game;StrategyGame;
+# vi: encoding=utf-8
