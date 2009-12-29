@@ -9,7 +9,10 @@ Source0:	http://dl.sourceforge.net/pytowerdefense/%{name}%{version}.zip
 Source1:	%{name}
 Source2:	%{name}.desktop
 URL:		http://sourceforge.net/projects/pytowerdefense/
+BuildRequires:	rpm-pythonprov
+BuildRequires:	unzip
 Requires:	python-pygame >= 1.9.1
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -35,6 +38,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_desktopdir}/%{name}.desktop
