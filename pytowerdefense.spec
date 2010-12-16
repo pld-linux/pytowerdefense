@@ -1,11 +1,11 @@
 Summary:	An Open-Source Tower Defense Game
 Name:		pytowerdefense
-Version:	0.4.6
-Release:	0.2
+Version:	0.5
+Release:	0.1
 License:	GPL v3
 Group:		X11/Applications/Games
 Source0:	http://dl.sourceforge.net/pytowerdefense/%{name}%{version}.zip
-# Source0-md5:	d14676a78622362dfc3b28a697ad0b29
+# Source0-md5:	289fda19abb2cfa1f5cbc86f0d25e35d
 Source1:	%{name}
 Source2:	%{name}.desktop
 URL:		http://sourceforge.net/projects/pytowerdefense/
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 An Open-Source Tower Defense Game.
 
 %prep
-%setup -q -c
+%setup -q -n %{name}%{version}
 
 %build
 
